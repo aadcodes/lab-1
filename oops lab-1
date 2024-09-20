@@ -63,22 +63,45 @@ elif op=='//':
 else:
     print("invalid operator")
 
+
 Q.5 program to find sum of digits
+
 num=(input("enter number:"))
 sum=0 
 for i in num: 
     sum=sum+int(i) 
 print(sum)
+
+
 Q.6   program to reverse a number
 num = 9078
 reversed_num = 0
-
 while num != 0:
     digit = num % 10
     reversed_num = reversed_num * 10 + digit
     num //= 10
-
 print("Reversed Number: " + str(reversed_num))
+
+
+--------LAB 2---------------
+Q.1 WAP to generate fibonacci series
+
+n=int(input("enter no. of terms:"))
+n1=0
+n2=1
+count=0
+if n<=0:
+    print("enter positive integer:")
+elif n==1:
+    print(n1)
+else:
+    print("fibonacci series is:")
+    while count<n:
+        print(n1)
+        n_th=n1+n2
+        n1=n2
+        n2=n_th
+        count+=1
 
 
    
