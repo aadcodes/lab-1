@@ -103,5 +103,43 @@ else:
         n2=n_th
         count+=1
 
+Q.2 wap to check for armstrong number
+num=int(input("enter number:"))
+sum=0
+temp=num
+while temp>0:
+    digit=temp%10
+    sum+=digit**3
+    temp//=10
+if num==sum:
+    print("valid")
+else:
+    print("invalid")
 
+////Q.3 wap to check for strong number////
+Q.4 wap to print multiplication tables
+
+n=int(input("enter number:"))
+for i in range(1,11):
+    print(num*i)
+----------------------------------------------
+#wap to find factorial of any no. using reduce fn
+import functools
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return functools.reduce(lambda x,y: x*y, range(1,n+1))
+num=int(input("enter number"))
+print(factorial(num))
+
+
+#wap to find largest among three no.s using reduce fn
+import functools
+list=[]
+num=input("enter numbers")
+for i in num:
+    list.append(i)
+result = functools.reduce(lambda x, y: x if x>y else y,list)
+print(result)
    
