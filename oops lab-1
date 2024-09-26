@@ -169,5 +169,33 @@ string=input("enter string")
 res=string[::-1]
 print(res)
 
+#Write a program to check if a string contains only digits.
+# Get input from the user
+string = input("Enter string: ")
+
+# Flag to track if any digit is found
+found_digit = False
+
+# Check each character in the string
+for i in string:
+    if i in '0123456789':
+        found_digit = True
+        break 
+if found_digit:
+    print("yes")
+else:
+    print("no")
+
+#Write a program to find the number of vowels in the string.
+string = input("Enter a string: ")
+vowels = "aeiouAEIOU"
+vowel_count = 0
+for char in string:
+    if char in vowels:
+        vowel_count += 1
+print("Number of vowels in the string:", vowel_count)
+
+
+
 
 
