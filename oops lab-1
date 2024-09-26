@@ -142,4 +142,32 @@ for i in num:
     list.append(i)
 result = functools.reduce(lambda x, y: x if x>y else y,list)
 print(result)
-   
+
+----------LAB 4-------------
+Q.2 To separate the following string into comma (,) separated values. X= “ India.is.my.country”
+x='India.is.my.country'
+y=x.split(".")
+print(y)
+
+# To remove a given character from a string. Y=”M.A.N.I.P.A.L” 
+C. To remove the (.) dots from the above string.
+x='India.is.my.country'
+y=x.replace('.',' ')
+print(y)
+
+
+#Write a program to sort strings alphabetically in python. 
+
+from functools import reduce 
+def sortString (str):
+    return reduce (lambda a, b : a + b, sorted (str))
+str = input ('Enter a string that you want to arrange in alphabetical order: ')
+print (sortString (str))
+
+#Take an input from a user as a string then, reverse it.
+string=input("enter string")
+res=string[::-1]
+print(res)
+
+
+
