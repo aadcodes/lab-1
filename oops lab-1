@@ -484,6 +484,26 @@ Pattern:
 * * * * 
 * * * * *
 
+#WAP to take input of length of string then iterate through each element and cube each element
+length = int(input("Enter the length of the string: "))
+num_string = input("Enter a string ")
+cubes = [int(char) ** 3 for char in num_string ]
+print("Cubes of Each Element:", cubes)
+
+#wap to check whether given string is palindrome
+
+s=input("enter string")
+palindrome=False
+for i in s:
+    if s[::-1]==s:
+        palindrome=True
+        break
+if palindrome:
+    print("yes,it is palindrome")
+else:
+    print("not palindrome")
+
+
 
 
 
