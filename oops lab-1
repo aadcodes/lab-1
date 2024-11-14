@@ -159,12 +159,25 @@ print(y)
 
 #Write a program to sort strings alphabetically in python. 
 
-from functools import reduce 
-def sortString (str):
-    return reduce (lambda a, b : a + b, sorted (str))
-str = input ('Enter a string that you want to arrange in alphabetical order: ')
-print (sortString (str))
+from functools import reduce
 
+def sortString(input_str):
+    # Split the input string into words
+    words = input_str.split()
+
+    # Sort the words alphabetically
+    sorted_words = sorted(words)
+
+    # Join the sorted words with a space between them
+    return " ".join(sorted_words)
+
+# Input from user
+str_input = input("Enter a string that you want to arrange in alphabetical order: ")
+
+# Call the function and print the result
+print(sortString(str_input))
+
+ 
 #Take an input from a user as a string then, reverse it.
 string=input("enter string")
 res=string[::-1]
