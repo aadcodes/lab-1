@@ -1,2 +1,2 @@
-# lab-1
+# lab
 cse core; oops with python 
